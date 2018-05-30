@@ -1,0 +1,7 @@
+*.out
+*.fast
+*.out
+*.asm
+*.exe
+.vscode/*
+.vscode
