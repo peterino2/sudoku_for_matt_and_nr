@@ -14,11 +14,6 @@
 #include<iostream>
 #endif
 
-
-#define DEBUGMODE
-#undef DEBUGMODE
-#ifdef DEBUGMODE
-#endif
 #define SETBIT(X, N) (X |= (1 << N) )
 #define CLEARBIT(X, N) (X &= ~(1 << N))
 
