@@ -1,6 +1,10 @@
 // Code kata exercise, fast sudoku solver
 // Maintain fast cache-safe code
-//
+// I used a statemachine... Cuz I am dumb
+// 
+// Preston's recursive version is like ~100 lines compared to this POCf
+// But I also have a lot more debugging functions in here
+
 #include<string.h>
 #include<stdio.h>
 #include<stdint.h>
@@ -414,9 +418,9 @@ int main( int argc, char **argv){
 #endif
 	build_solution(stepnum, steps, values, g_puzzleString, g_solutionString);
 	printf("\n THE SOLUTION IS :\n%s\n",g_solutionString);
+
 #ifdef __cplusplus
-	std::cout << "Solution found in "<< duration<< " us\n";
-	
+	std::cout << "Solution found in "<< duration<< " us\n";	
 #endif
 	return 0;
 }
